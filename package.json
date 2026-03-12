@@ -1,0 +1,22 @@
+{
+  "name": "arosario513.github.io",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "turbo": "^2.8.16"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "bun@1.3.10",
+  "workspaces": [
+    "src/*",
+    "packages/*"
+  ]
+}
