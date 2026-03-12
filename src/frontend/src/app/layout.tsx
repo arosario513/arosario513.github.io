@@ -16,7 +16,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" data-bs-theme="dark">
             <body>
                 <Header />
                 <div className="container-fluid mt-3">{children}</div>
