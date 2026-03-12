@@ -1,0 +1,5 @@
+:HL["/_next/static/chunks/d43ab978ac5b76ce.css","style"]
+:HL["/_next/static/chunks/c7fae51ba9a30c80.css","style"]
+:HC["/",""]
+:HL["https://raw.githubusercontent.com/arosario513/COMP-3600/main/emoji2/output.png","image"]
+0:{"buildId":"Q9Bfz1ZZ4hwF_x2jvuU7k","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"projects","paramType":null,"paramKey":"projects","hasRuntimePrefetch":false,"slots":{"children":{"name":"name","paramType":"d","paramKey":"emoji2","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
