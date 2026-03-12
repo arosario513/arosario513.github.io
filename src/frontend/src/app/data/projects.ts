@@ -3,6 +3,7 @@ export const REPO_RAW =
 
 export const projects = [
     { slug: "emoji", name: "Emoji" },
+    { slug: "emoji2", name: "Emoji #2" },
     { slug: "flag", name: "Flag" },
     { slug: "inicial", name: "Inicial" },
     { slug: "inter", name: "Inter" },
