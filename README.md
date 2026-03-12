@@ -1,15 +1,24 @@
 # arosario513.github.io
 
-To install dependencies:
+Personal portfolio site for COMP-3600 (Computer Graphics) coursework.
+
+Built with Next.js 16, Bootstrap 5, Bun, and Turborepo. Deployed to GitHub Pages via GitHub Actions.
+
+## Stack
+
+- **Framework**: Next.js 16 (App Router, static export)
+- **Styling**: Bootstrap 5 + Bootstrap Icons
+- **Package manager**: Bun
+- **Monorepo**: Turborepo
+
+## Development
 
 ```bash
-bun install
+bun install       # install dependencies
+bun run dev       # start dev server
+bun run build     # production build
 ```
 
-To run:
+## Deployment
 
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.3.10. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+Pushes to `main` automatically build and deploy to GitHub Pages via `.github/workflows/deploy.yml`.
