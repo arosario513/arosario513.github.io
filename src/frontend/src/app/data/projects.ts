@@ -2,6 +2,7 @@ export const REPO_RAW =
     "https://raw.githubusercontent.com/arosario513/COMP-3600/main";
 
 export const projects = [
+    { slug: "bmw", name: "BMW Logo" },
     { slug: "emoji", name: "Emoji" },
     { slug: "emoji2", name: "Emoji #2" },
     { slug: "flag", name: "Flag" },
