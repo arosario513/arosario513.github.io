@@ -5,6 +5,7 @@ export const projects = [
     { slug: "emoji", name: "Emoji" },
     { slug: "emoji2", name: "Emoji #2" },
     { slug: "flag", name: "Flag" },
+    { slug: "ghosts", name: "Pac-man Ghosts" },
     { slug: "inicial", name: "Inicial" },
     { slug: "inter", name: "Inter" },
     { slug: "owl", name: "Owl" },
