@@ -1,6 +1,7 @@
 :HL["/_next/static/chunks/d43ab978ac5b76ce.css","style"]
 :HL["/_next/static/chunks/c7fae51ba9a30c80.css","style"]
 :HC["/",""]
+:HL["https://raw.githubusercontent.com/arosario513/COMP-3600/main/bmw/output.png","image"]
 :HL["https://raw.githubusercontent.com/arosario513/COMP-3600/main/emoji/output.png","image"]
 :HL["https://raw.githubusercontent.com/arosario513/COMP-3600/main/emoji2/output.png","image"]
 :HL["https://raw.githubusercontent.com/arosario513/COMP-3600/main/flag/output.png","image"]
@@ -9,4 +10,4 @@
 :HL["https://raw.githubusercontent.com/arosario513/COMP-3600/main/inter/output.png","image"]
 :HL["https://raw.githubusercontent.com/arosario513/COMP-3600/main/owl/output.png","image"]
 :HL["https://raw.githubusercontent.com/arosario513/COMP-3600/main/pacman/output.png","image"]
-0:{"buildId":"EMGezjeMZChHhrV6KxUjf","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"projects","paramType":null,"paramKey":"projects","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"FAsHBIMtwc1B2GL7yJRjl","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"projects","paramType":null,"paramKey":"projects","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
