@@ -3,6 +3,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/header";
+import BootstrapJS from "./components/bootstrap-js";
 
 export const metadata: Metadata = {
     title: "COMP-3600",
@@ -18,6 +19,7 @@ export default function RootLayout({
     return (
         <html lang="en" data-bs-theme="dark">
             <body>
+                <BootstrapJS />
                 <Header />
                 <div className="container-fluid mt-3">{children}</div>
             </body>

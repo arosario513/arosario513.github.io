@@ -1,52 +1,52 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { codeToHtml } from "shiki";
-import { projects, REPO_RAW } from "../../data/projects";
+import { graphics3dProjects } from "../../data/graphics3d";
+import { REPO_RAW } from "../../data/projects";
 
 export function generateStaticParams() {
-    return projects.map(({ slug }) => ({ name: slug }));
+    return graphics3dProjects.map(({ slug }) => ({ name: slug }));
 }
 
-export default async function ProjectPage({
+export default async function Graphics3DPage({
     params,
 }: {
     params: Promise<{ name: string }>;
 }) {
     const { name } = await params;
-    const project = projects.find((p) => p.slug === name);
+    const project = graphics3dProjects.find((p) => p.slug === name);
     if (!project) notFound();
 
-    const res = await fetch(`${REPO_RAW}/${project.slug}/Form1.cs`, {
+    const res = await fetch(`${REPO_RAW}/${project.slug}/${project.wrlFile}`, {
         cache: "force-cache",
     });
     if (!res.ok) notFound();
 
     const code = await res.text();
     const highlightedCode = await codeToHtml(code, {
-        lang: "csharp",
+        lang: "plaintext",
         theme: "catppuccin-mocha",
     });
 
     return (
         <div className="container">
-            <Link href="/projects" className="btn btn-outline-danger btn-sm mb-3">
+            <Link href="/3dgraphics" className="btn btn-outline-danger btn-sm mb-3">
                 Back
             </Link>
             <h2 className="mb-4">{project.name}</h2>
             <div className="row g-4 align-items-start">
                 <div className="col-md-5">
-                    <h6 className="text-muted mb-2">output.png</h6>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                        src={`${REPO_RAW}/${project.slug}/output.png`}
-                        alt={`${project.name} output`}
-                        className="img-fluid rounded border project-media"
+                    <h6 className="text-muted mb-2">output.mp4</h6>
+                    <video
+                        src={project.videoUrl}
+                        controls
+                        className="w-100 rounded border project-media"
                     />
                 </div>
                 <div className="col-md-7">
-                    <h6 className="text-muted mb-2">Form1.cs</h6>
+                    <h6 className="text-muted mb-2">{project.wrlFile}</h6>
                     <div
-                        className="rounded"
+                        className="rounded border project-code"
                         style={{ overflow: "auto", maxHeight: 600 }}
                         dangerouslySetInnerHTML={{ __html: highlightedCode }}
                     />
