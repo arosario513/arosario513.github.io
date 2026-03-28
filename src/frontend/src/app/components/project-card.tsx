@@ -5,14 +5,20 @@ type ProjectCardProps = {
     name: string;
     slug: string;
     href: string;
+    imageUrl?: string;
 };
 
-export default function ProjectCard({ name, slug, href }: ProjectCardProps) {
+export default function ProjectCard({
+    name,
+    slug,
+    href,
+    imageUrl,
+}: ProjectCardProps) {
     return (
         <div className="card h-100 project-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-                src={`${REPO_RAW}/${slug}/output.png`}
+                src={imageUrl ?? `${REPO_RAW}/${slug}/output.png`}
                 alt={`${name} output`}
                 className="card-img-top bg-body-tertiary"
                 style={{ height: 180, objectFit: "contain" }}

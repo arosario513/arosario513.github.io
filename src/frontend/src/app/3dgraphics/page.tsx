@@ -8,9 +8,14 @@ export default function Graphics3D() {
                 <h1>3D Graphics</h1>
             </div>
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-                {graphics3dProjects.map(({ slug, name }) => (
+                {graphics3dProjects.map(({ slug, name, imageUrl }) => (
                     <div key={slug} className="col">
-                        <ProjectCard name={name} slug={slug} href={`/3dgraphics/${slug}`} />
+                        <ProjectCard
+                            name={name}
+                            slug={slug}
+                            href={`/3dgraphics/${slug}`}
+                            imageUrl={imageUrl ?? undefined}
+                        />
                     </div>
                 ))}
             </div>
