@@ -10,4 +10,5 @@
 :HL["https://raw.githubusercontent.com/arosario513/COMP-3600/main/inter/output.png","image"]
 :HL["https://raw.githubusercontent.com/arosario513/COMP-3600/main/owl/output.png","image"]
 :HL["https://raw.githubusercontent.com/arosario513/COMP-3600/main/pacman/output.png","image"]
-0:{"buildId":"2AUygMoh9Sb9JPridp9y1","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"projects","paramType":null,"paramKey":"projects","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+:HL["https://github.com/user-attachments/assets/589fbb50-ba0a-4427-8343-87a9afaf64d4","image"]
+0:{"buildId":"i_NH69j3GHNwiOya2Z1so","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"projects","paramType":null,"paramKey":"projects","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
