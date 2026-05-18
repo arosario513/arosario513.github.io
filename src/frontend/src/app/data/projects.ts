@@ -11,6 +11,13 @@ export const projects = [
     { slug: "inter", name: "Inter" },
     { slug: "owl", name: "Owl" },
     { slug: "pacman", name: "Pac-Man" },
+    {
+        slug: "svg",
+        name: "SVG Primitives",
+        readme: true,
+        coverUrl:
+            "https://github.com/user-attachments/assets/589fbb50-ba0a-4427-8343-87a9afaf64d4",
+    },
 ] as const;
 
 export type ProjectSlug = (typeof projects)[number]["slug"];

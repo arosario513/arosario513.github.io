@@ -18,15 +18,16 @@ export default async function Graphics3DPage({
     const project = graphics3dProjects.find((p) => p.slug === name);
     if (!project) notFound();
 
-    const wrlContents = await Promise.all(
-        project.wrlFiles.map(async (file) => {
+    const sourceContents = await Promise.all(
+        project.sourceFiles.map(async (file) => {
             const res = await fetch(`${REPO_RAW}/${project.folder}/${file}`, {
                 cache: "force-cache",
             });
             if (!res.ok) return { file, html: null };
             const code = await res.text();
+            const lang = file.endsWith(".x3d") ? "xml" : "plaintext";
             const html = await codeToHtml(code, {
-                lang: "plaintext",
+                lang,
                 theme: "catppuccin-mocha",
             });
             return { file, html };
@@ -65,7 +66,7 @@ export default async function Graphics3DPage({
                     )}
                 </div>
                 <div className="col-md-7">
-                    <WrlViewer files={wrlContents} />
+                    <WrlViewer files={sourceContents} />
                 </div>
             </div>
         </div>

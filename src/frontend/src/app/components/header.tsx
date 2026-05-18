@@ -26,6 +26,9 @@ export default function Header() {
                         <Link href="/3dgraphics" className="nav-link">
                             3D Graphics
                         </Link>
+                        <Link href="/presentations" className="nav-link">
+                            Presentations
+                        </Link>
                     </div>
                 </div>
             </div>
