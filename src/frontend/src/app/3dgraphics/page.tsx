@@ -1,5 +1,6 @@
 import { graphics3dProjects } from "../data/graphics3d";
 import ProjectCard from "../components/project-card";
+import ImageCard from "../components/image-card";
 
 export default function Graphics3D() {
     return (
@@ -18,6 +19,12 @@ export default function Graphics3D() {
                         />
                     </div>
                 ))}
+                <div className="col">
+                    <ImageCard
+                        name="Mario Coin"
+                        imageUrl="/images/coin.png"
+                    />
+                </div>
             </div>
         </div>
     );
